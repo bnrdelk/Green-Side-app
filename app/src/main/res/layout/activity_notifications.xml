@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/campaigns"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="25dp"
+                    android:text="Campaigns"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#6D388E3C"
+                    android:clickable="true"
+                    android:onClick="goToHome"></ImageView>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/campaign1"
+            android:layout_below="@id/campaigns"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <androidx.cardview.widget.CardView
+                app:contentPaddingRight="10dp"
+                android:backgroundTint="#19775151"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="40dp"
+                    android:paddingEnd="18dp"
+                    android:textSize="16dp"
+                    android:text="If you buy 2 flowers,\n a 'Sunshine Vase' is a gift!"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="textEnd">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_card_giftcard_24" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/campaign2"
+            android:layout_below="@id/campaign1"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <androidx.cardview.widget.CardView
+                app:contentPaddingRight="10dp"
+                android:backgroundTint="#19775151"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="40dp"
+                    android:paddingEnd="18dp"
+                    android:textSize="16dp"
+                    android:text="If you buy 2 flowers,\n a 'Sunshine Vase' is a gift!"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="textEnd">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_card_giftcard_24" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/campaign3"
+            android:layout_below="@id/campaign2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <androidx.cardview.widget.CardView
+                app:contentPaddingRight="10dp"
+                android:backgroundTint="#19775151"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="40dp"
+                    android:paddingEnd="18dp"
+                    android:textSize="16dp"
+                    android:text="If you buy 2 flowers,\n a 'Sunshine Vase' is a gift!"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="textEnd">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_card_giftcard_24" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/campaign4"
+            android:layout_below="@id/campaign3"
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <androidx.cardview.widget.CardView
+                app:contentPaddingRight="10dp"
+                android:backgroundTint="#19775151"
+                android:layout_margin="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:paddingTop="40dp"
+                    android:paddingEnd="18dp"
+                    android:textSize="16dp"
+                    android:text="If you buy 2 flowers,\n a 'Sunshine Vase' is a gift!"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="textEnd">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_card_giftcard_24" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

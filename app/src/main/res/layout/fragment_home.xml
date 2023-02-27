@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ic_baseline_info_24"
+                    android:backgroundTint="#A88A878F"
+                    android:clickable="true"
+                    android:onClick="goToInfo">
+
+                </ImageView>
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/logogr"></ImageView>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:onClick="goToNotifications"
+                    android:clickable="true"
+                    android:background="@drawable/ringbell"
+                    android:layout_marginStart="85dp"
+                    android:backgroundTint="#AAA3BC"
+                    android:layout_height="30dp">
+                </ImageView>
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </RelativeLayout>
+
+
+        <HorizontalScrollView
+            android:layout_below="@id/top"
+            android:id="@+id/topCategories"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_width="100dp"
+                    android:clickable="true"
+                    android:onClick="goToHome"
+                    android:layout_height="36dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:drawableStart="@drawable/ic_home_black_24dp"
+                        android:paddingStart="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Home"
+                        android:textAlignment="center"
+                        android:textColor="#8F000000"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="85dp"
+                    android:layout_height="36dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginTop="4dp"
+                    android:clickable="true"
+                    android:onClick="goToFertilizers"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Fertilizers"
+                        android:textAlignment="center"
+                        android:textSize="16dp">
+
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="20dp"
+                    android:clickable="true"
+                    android:onClick="goToDonate"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Donate"
+                        android:textAlignment="center"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="140dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:clickable="true"
+                    android:onClick="goToDecoration"
+                    app:cardCornerRadius="20dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Home Decoration"
+                        android:textAlignment="center"
+                        android:textSize="16dp">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    app:cardCornerRadius="180dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="3dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Green Side Collection"
+                        android:textAlignment="center"
+                        android:textColor="#8F000000"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <RelativeLayout
+            android:layout_below="@id/topCategories"
+            android:id="@+id/dashboard"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+            <ViewFlipper
+                android:inAnimation="@anim/nav_default_enter_anim"
+                android:flipInterval="5000"
+                android:autoStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/wmday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ImageView>
+
+                <ImageView
+                    android:background="@drawable/savetheworld"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ImageView>
+
+            </ViewFlipper>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/secondTxt"
+            android:layout_below="@id/dashboard">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CATEGORIES"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed-light"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/categories"
+            android:layout_below="@id/secondTxt"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="100dp">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:onClick="goToFlowerScreen"
+                android:id="@+id/c1"
+                app:cardCornerRadius="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/flowerico">
+
+                </ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="FLOWERS"
+                        android:textAlignment="center"
+                        android:background="#5A5858"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c2"
+                android:layout_width="82dp"
+                android:layout_height="79dp"
+                android:layout_alignLeft="@id/c1"
+                android:layout_marginLeft="96.5dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:onClick="goToSeedScreen"
+                    android:layout_height="65dp"
+                    android:background="@drawable/seedico">
+
+                </ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="55dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#5A5858"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="SEEDS"
+                        android:textAlignment="center"></TextView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c3"
+                app:cardCornerRadius="20dp"
+                android:layout_alignLeft="@id/c2"
+                android:layout_marginLeft="97dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:onClick="goToBeautyScreen"
+                    android:layout_height="65dp"
+                    android:background="@drawable/beautyico">
+
+                </ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="BEAUTY"
+                        android:textAlignment="center"
+                        android:background="#5A5858"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c4"
+                app:cardCornerRadius="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:clickable="true"
+                    android:onClick="goToVaseScreen"
+                    android:layout_height="64dp"
+                    android:background="@drawable/vase">
+
+                </ImageView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="55dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="VASES"
+                        android:textAlignment="center"
+                        android:background="#5A5858"
+                        android:textColor="@color/white"
+                        android:fontFamily="sans-serif-condensed">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/newestTxt"
+            android:layout_below="@id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="46.5dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-light"
+                android:text="Newest products for you"
+                android:textAlignment="center"
+                android:textAllCaps="true">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/newestTxt"
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:onClick="goToRoseSerum"
+                        android:layout_marginStart="7dp"
+                        app:cardCornerRadius="7dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:background="@drawable/tulip"></ImageView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginTop="190dp"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:background="#ECE8E8"
+                                android:textAlignment="center"
+                                android:text="Tulip Flower"
+                                android:padding="5dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="7dp"
+                        app:cardCornerRadius="7dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:background="@drawable/lavenderseed"></ImageView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginTop="190dp"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:background="#ECE8E8"
+                                android:textAlignment="center"
+                                android:text="Lavender Seed"
+                                android:padding="5dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="7dp"
+                        app:cardCornerRadius="7dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:background="@drawable/longvase"></ImageView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginTop="190dp"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:background="#ECE8E8"
+                                android:textAlignment="center"
+                                android:text="Looong Vase"
+                                android:padding="5dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="7dp"
+                        app:cardCornerRadius="7dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:background="@drawable/cream"></ImageView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_marginTop="190dp"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                            <TextView
+                                android:background="#ECE8E8"
+                                android:textAlignment="center"
+                                android:text="Rose Essence Cream"
+                                android:padding="5dp"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </TextView>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

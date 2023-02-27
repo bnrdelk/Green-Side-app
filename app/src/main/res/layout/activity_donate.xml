@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/donation"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="10dp"
+                android:backgroundTint="#605E5E"
+                android:layout_margin="10dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/back"
+                    android:clickable="true"
+                    android:onClick="goToHome"></ImageView>
+                <TextView
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:textSize="25dp"
+                    android:text="Donation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </TextView>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/donation"
+            android:id="@+id/dashboard"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="150dp">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                app:cardCornerRadius="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/donateslide">
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/text"
+            android:layout_below="@id/dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:text="Click to donate from TEMA foundation"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/onetreeplanted"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@id/text">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tema"
+                    android:onClick="goToOneTreePlant">
+
+                </ImageView>
+
+               </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@id/onetreeplanted"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="protect our tomorrow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
